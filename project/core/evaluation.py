@@ -1,8 +1,8 @@
 """RAGAS + custom retrieval evaluation for the Agentic RAG system.
 
-Port of ``notebooks/evaluation.ipynb`` into a reusable module. Typical flow:
+Typical flow:
 
-1. Load curated QA records from ``notebooks/data/curated_ragas_qa.json``.
+1. Load curated QA records from ``project/data/curated_ragas_qa.json``.
 2. Run each question through the agentic RAG pipeline.
 3. Score retrieval with custom metrics (hit_rate, mrr) and outputs with five RAGAS metrics.
 4. Save ``ragas_evaluation_dataset.csv`` and ``rag_evaluation_results.csv``.
@@ -47,12 +47,11 @@ logger = logging.getLogger(__name__)
 
 _REPO_ROOT = Path(config.MARKDOWN_DIR).parent
 _PROJECT_DIR = Path(__file__).resolve().parent.parent
-_DEFAULT_QA_PATH = _REPO_ROOT / "notebooks" / "data" / "curated_ragas_qa.json"
+_DEFAULT_QA_PATH = _PROJECT_DIR / "data" / "curated_ragas_qa.json"
 _DEFAULT_OUTPUT_DIR = _REPO_ROOT / "data" / "evaluation"
 _OUTPUT_DIR_DISPLAY = "data/evaluation"
 _DATASET_CSV_CANDIDATES = (
     _DEFAULT_OUTPUT_DIR / "ragas_evaluation_dataset.csv",
-    _REPO_ROOT / "notebooks" / "ragas_evaluation_dataset.csv",
 )
 _REQUIRED_MARKDOWN = frozenset({"javascript_tutorial.md", "blockchain.md", "fortinet.md"})
 

@@ -52,7 +52,7 @@ python project/app.py
 
 ## 评测项目
 
-评测前需已完成文档入库。测试集默认位于 `notebooks/data/curated_ragas_qa.json`。
+评测前需已完成文档入库。测试集位于 `project/data/curated_ragas_qa.json`。
 
 **方式一：Gradio 界面**
 
@@ -68,10 +68,4 @@ python -m core.evaluation --query-only   # 仅生成回答，保存 CSV
 python -m core.evaluation --skip-query   # 基于已有 CSV 仅打分
 ```
 
-**方式三：Notebook**
-
-```bash
-jupyter notebook notebooks/evaluation.ipynb
-```
-
-按单元格顺序运行即可。指标包括 Answer Accuracy、Context Relevance、Response Groundedness、Context Precision、Context Recall，以及自定义检索指标 hit_rate / mrr。
+指标包括 Answer Accuracy、Context Relevance、Response Groundedness、Context Precision、Context Recall，以及自定义检索指标 hit_rate / mrr。
