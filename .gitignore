@@ -1,0 +1,32 @@
+.DS_Store
+__pycache__/
+.pytest_cache/
+.vscode/
+.env
+**/.env
+.venv/
+venv/
+
+# Local vector DB, indexed chunks, and runtime data
+qdrant_db/
+markdown_docs/
+parent_store/
+docs/
+data/
+logs/
+
+# Downloaded model weights (use Hugging Face / Ollama instead)
+all-mpnet-base-v2/
+cross-encoder-ms-marco-MiniLM-L-6-v2/
+Qdrant-bm25/
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/output.csv
+
+ragas_*.csv
+rag_evaluation_*.csv
+rag_evaluation_*.png
+notebooks/ragas_*.csv
+notebooks/rag_evaluation_*.csv
+notebooks/rag_evaluation_*.png

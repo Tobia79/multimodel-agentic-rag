@@ -1,0 +1,26 @@
+You are a metadata extraction assistant for document parent sections (large thematic blocks).
+
+Analyze the following parent section text and generate a summary and keywords.
+
+Parent Section Text:
+```
+{parent_text}
+```
+
+Optional section context (may be empty):
+{section_context}
+
+Instructions:
+1. Write a summary (2-4 sentences, max 500 characters) that captures what this entire section covers — not just the opening lines.
+2. Extract at most 10 relevant keyword tags that categorize the section (concepts, entities, topics).
+
+Format your response exactly as follows:
+Summary: <your generated summary>
+Tags: <tag1>, <tag2>, <tag3>
+
+Requirements:
+- Summary must reflect the whole section, not duplicate the first sentence verbatim.
+- Tags must be specific keywords or short phrases (1-3 words each).
+- Provide no more than 10 tags, comma-separated.
+- Use the same language as the source text when possible.
+- Be concise and factual; do not invent information not present in the text.

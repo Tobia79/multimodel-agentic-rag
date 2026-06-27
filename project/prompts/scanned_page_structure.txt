@@ -1,0 +1,16 @@
+Convert this scanned document page into clean, searchable structured text.
+
+The following text was extracted by OCR (it may contain recognition errors — correct them using the page image):
+
+---
+{ocr_text}
+---
+
+Instructions:
+1. Correct OCR errors and recover missing text from the image.
+2. Preserve document structure: headings, numbered/bulleted lists, tables, and code blocks.
+3. Tables: output as Markdown tables when the layout is tabular.
+4. Lists: keep numbering, bullets, and indentation hierarchy.
+5. Code blocks: wrap in fenced code blocks (```); preserve exact characters, spacing, and indentation; only fix obvious OCR mistakes.
+6. Use the same language as the source page (e.g. Chinese pages in Chinese).
+7. Output Markdown only. Do not add commentary like "This is a scanned page".

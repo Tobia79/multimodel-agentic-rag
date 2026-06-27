@@ -1,0 +1,25 @@
+fastembed==0.8.0
+gradio==6.17.3
+ipykernel==7.2.0
+langchain-huggingface==1.2.2
+langchain-ollama==1.1.0
+langchain-openai>=0.3.0
+openai>=1.0.0
+langchain-qdrant==1.1.0
+langchain-text-splitters==1.1.2
+langfuse==4.7.1
+langgraph==1.2.4
+matplotlib==3.10.9
+pymupdf4llm==1.27.2.3
+markitdown>=0.1.0
+magika>=0.6.1,<0.7.0
+onnxruntime>=1.22.0,!=1.24.0,!=1.24.1
+Pillow>=10.0.0
+python-dotenv==1.2.2
+ragas==0.4.3
+seaborn==0.13.2
+sentence-transformers==5.5.1
+tiktoken==0.13.0
+ddgs>=9.0.0
+# OCR for image ingestion (also install paddlepaddle on Windows CPU — see .env.example)
+paddleocr>=3.7.0
